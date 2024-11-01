@@ -6,3 +6,10 @@
 1. Angel
 1. Yatzil
 1. Mariela
+
+## Segunda Línea
+
+- Aislynn
+- Emanueal
+- Manuel
+- Ernesto
