@@ -5,7 +5,6 @@
 1. Andrea
 1. Angel
 1. Yatzil
-1. Mariela
 
 ## Segunda Línea
 
@@ -13,3 +12,4 @@
 - Emanueal
 - Manuel
 - Ernesto
+- Agustin
