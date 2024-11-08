@@ -1,0 +1,54 @@
+body {
+  /* background: gold; */
+  /* Este es un comentario en CSS */
+  font-family: sans-serif;
+}
+
+h1 {
+  text-transform: lowercase;
+}
+
+p {
+  /* background: pink;  */
+  color: blueviolet;
+}
+
+.parrafo-bonito {
+  background-color: #90aa90;
+  font-weight: bold;
+}
+
+#parrafo-unico {
+  color: hotpink;
+  font-size: 22px;
+}
+
+.link-especial {
+  color: black;
+}
+
+a {
+  color: cadetblue;
+}
+
+a {
+  color: hotpink;
+}
+
+/* main {
+  color: grey;
+} */
+
+
+/* 
+p
+{
+  jwdbwqdjw
+}
+
+p{
+  kankjnsdajks
+}
+
+p {kwhkjhwsqbjk}
+*/
