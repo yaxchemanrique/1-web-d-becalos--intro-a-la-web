@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(197, 193, 170);
+  background-color: rgb(247, 238, 225);
 }
 
 /* h1 son etiquetas de tipo bloque */
@@ -47,6 +47,9 @@ p {
 #parrafo-1 {
   /* background-color: aquamarine; */
   background-clip: border-box;
+  /* Esto cambia el contenido */
+  width: 200px;
+  height: 300px;
 }
 
 #parrafo-2 {
@@ -63,4 +66,16 @@ h2 {
   background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   background-clip: text;
   color: transparent;
+}
+
+span {
+  color: rgb(168, 109, 222);
+  background-color: black;
+  padding: 5px;
+  border: solid 3px rgb(168, 109, 222);
+  display: inline-block;
+  /* display: block; */
+  margin: 16px;
+  width: 200px;
+  height: 50px;
 }
