@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+  /* padding: 60px; */
+  margin: 0;
+}
+/* Pixeles -> unidades absolutas */
+
+/* Unidades Relativas */
+/* REM -> root EM -> por defecto: 1rem -> 16px*/
+
+a {
+  background-color: rgb(29, 129, 102);
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* EM */
+span {
+  color: hotpink;
+}
+
+section {
+  font-size: 1.5rem; /* 1.5rem = 24px */
+}
+
+h1, h2, h3, h4 {
+  /* font-size: 1em; */ /* 1 * 24px = 24px */
+  background-color: lavender;
+  border: solid 1px;
+  margin-bottom: 1.5em;
+}
+
+h1 {
+  font-size: 10vw;
+}
+
+p {
+  font-size: 1.2em; /* 1.2 * 24  = 28.8*/
+}
+
+span {
+  font-size: 1.2em; /* 1.2 * 28.8px = 34.56*/
+}
+
+#box-1 {
+  display: inline-block;
+  background-color: cadetblue;
+  width: 20px;
+  height: 1ex;
+}
+
+#ch {
+  max-width: 70ch;
+}
+
+/* % */
+/* viewport width -> vw */
+/* viewport height -> vh */
+/* dynamic viewport width -> dvw -> no tienen muy buen soporte*/
+/* dynamic viewport height -> dvh -> no tienen muy buen soporte*/
+/* vmin */
+/* vmax */
+
+article {
+  /* height: 550px; */
+  background-color: hotpink ;
+  /* vh fallback/respaldo de dvh*/
+  height: 100vh;
+  /* supported in: ---- */
+  height: 100dvh;
+  /* width: 50vw; */
+}
+
+.box {
+  background-color: lavenderblush;
+  /* width: 100vmax;  */
+  height: 50%;
+
+  /* width: 203.5px;
+  height: 275px; */
+}
