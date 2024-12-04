@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900');
+:root {
+  /* mamá: 55-22-55-22-55 */
+
+  --clr-violet: #AD1FEA;
+  --clr-blue: #4661E6;
+  --clr-dark-blue: #373F68;
+  --clr-white: #fff;
+  --clr-light-blue: #F2F4FF;
+  --clr-grey: #647196;
+  --clr-orange: #F49F85;
+  --clr-bright-blue: #62BCFA;
+
+  --ff-body: "Jost", sans-serif;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.5rem;
+
+  --fw-h1: 900; /*font-weight: var(--fw-h1)*/
+
+  --br-md: 6px;
+}
+
+body {
+  background-color: var(--clr-light-blue);
+  font-family: var(--ff-body);
+}
+
+.article-orange {
+  --clr-accent: var(--clr-orange);
+}
+
+.article-violet {
+  --clr-accent: var(--clr-violet);
+}
+
+.article-blue {
+  --clr-accent: var(--clr-bright-blue);
+}
+
+article {
+  max-width: 350px;
+  color: var(--clr-dark-blue);
+  border-top: solid 6px var(--clr-accent, black);
+  padding: 32px;
+  background-color: var(--clr-white);
+  border-radius: var(--br-md);
+}
+
+.primary-tag {
+  color: var(--clr-grey, #647196);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dot {
+  display: block;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+}
+
+.secondary-tag {
+  color: var(--clr-blue);
+  background-color: var(--clr-light-blue);
+  width: fit-content;
+  padding: 6px 16px;
+  border-radius: 10px;
+}
