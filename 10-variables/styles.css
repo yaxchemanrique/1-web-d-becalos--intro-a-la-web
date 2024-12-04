@@ -6,7 +6,12 @@
   --clr-blue: #4661E6;
   --clr-dark-blue: #373F68;
   --clr-white: #fff;
-  --clr-light-blue: #F2F4FF;
+  --clr-light-blue: hsl(231, 100%, 97%);
+
+  --clr-light-blue-h: 231;
+  --clr-light-blue-s: 100%;
+  --clr-light-blue-l: 97%;
+
   --clr-grey: #647196;
   --clr-orange: #F49F85;
   --clr-bright-blue: #62BCFA;
@@ -45,6 +50,11 @@ article {
   padding: 32px;
   background-color: var(--clr-white);
   border-radius: var(--br-md);
+  /* background-image:
+    linear-gradient(90deg, 
+      var(--clr-violet) 0%, 
+      var(--clr-orange) 50%, 
+      var(--clr-white) 100%); */
 }
 
 .primary-tag {
@@ -64,8 +74,23 @@ article {
 
 .secondary-tag {
   color: var(--clr-blue);
-  background-color: var(--clr-light-blue);
+  background-color: hsl(231, 100%, 97%);
+  background-color: 
+    hsl(
+      var(--clr-light-blue-h),
+      var(--clr-light-blue-s),
+      var(--clr-light-blue-l)
+      );
   width: fit-content;
-  padding: 6px 16px;
+  padding: calc( 3 * 2px ) 16px;
   border-radius: 10px;
+}
+
+.secondary-tag:hover {
+  background-color:
+    hsl(
+      var(--clr-light-blue-h), /* color */
+      var(--clr-light-blue-s), /* saturado */
+      calc( var(--clr-light-blue-l) * .95) /* 93%  claro */
+      );
 }
