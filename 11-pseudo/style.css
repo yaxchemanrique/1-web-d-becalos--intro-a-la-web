@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* a:hover {
+  background-color: thistle;
+  display: inline-block;
+  transform: scale(1.2);
+} */
+
+button {
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 
+.disabled {
+  background-color: gainsboro;
+  cursor: not-allowed;
+}
+*/
+
+/* Selector de atributos */
+/* 
+button[disabled] {
+  background-color: gainsboro;
+  cursor: not-allowed;
+}
+*/
+
+.error-correo {
+  display: none;
+}
+
+button:disabled {
+  background-color: gainsboro;
+  cursor: not-allowed;
+}
+
+/* input:required {
+  background-color: rgb(228, 187, 187);
+} */
+
+/* input:invalid {
+  outline: red 1px solid;
+} */
+
+/* input:invalid:not(:placeholder-shown) {
+  outline: red 1px solid;
+} */
+
+input:user-invalid {
+  outline: red 1px solid;
+}
+
+input:user-valid {
+  outline: rgb(68, 171, 59) 1px solid;
+}
+
+/* El hermano siguiente */
+/* input:invalid + .error-correo  */
+
+/* Un hermano */
+input:user-invalid~.error-correo {
+  display: block;
+  font-size: 0.7rem;
+  background-color: rgb(228, 187, 187);
+  color: rgb(151, 54, 54);
+}
+
+input[type="checkbox"] {
+  accent-color: violet;
+}
+
+#tyc:checked~label {
+  background-color: steelblue;
+}
+
+a:link {
+  color: yellowgreen;
+}
+
+a:visited {
+  color: cadetblue;
+}
+
+section:target h2 {
+  background-color: grey;
+}
+
+/* .lista-1 li:nth-child(1) {
+  background-color: rgb(255, 213, 206);
+}
+
+.lista-1 li:nth-child(2) {
+  background-color: rgb(255, 188, 176);
+}
+
+.lista-1 li:nth-child(3) {
+  background-color: rgb(255, 151, 133);
+}
+
+.lista-1 li:nth-child(4) {
+  background-color: rgb(255, 118, 93);
+}
+
+.lista-1 li:nth-child(5) {
+  background-color: rgb(255, 96, 68);
+} */
+
+/* n = 0 */
+.lista-1 li:nth-child(4n + 1) {
+  background-color: rgb(255, 213, 206);
+}
+
+.lista-1 li:nth-child(4n + 2) {
+  background-color: rgb(255, 173, 159);
+}
+
+.lista-1 li:nth-child(4n + 3) {
+  background-color: rgb(255, 136, 115);
+}
+
+.lista-1 li:nth-child(4n) {
+  background-color: rgb(255, 103, 76);
+}
+
+
+/* .lista-1 li:nth-child(even) { 
+  background-color: rgb(255, 96, 68);
+} */
+
+/* impares*/
+/*
+.lista-2 dd:nth-child(odd) { 
+  background-color: hotpink;
+} 
+*/
+
+/* impares*/
+.lista-2 dd:nth-of-type(2n + 1) {
+  background-color: lightsteelblue; 
+}
+.lista-2 dd:nth-of-type(2n) {
+  background-color: rgb(116, 152, 197); 
+}
