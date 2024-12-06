@@ -1,0 +1,89 @@
+p::first-line {
+  color: hotpink;
+}
+
+p::first-letter {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+::selection {
+  background-color: rgb(198, 255, 100);
+  color: rgb(46, 60, 21);
+}
+
+::placeholder {
+  color: rgb(167, 179, 255);
+  font-size: 0.65rem;
+}
+
+.lista-1 li::marker {
+  /* color: rgb(133, 230, 113); */
+  /* content: '💓'; */
+  /* content: url(./pokebola.svg); */
+  content: attr(data-marker-icon) ') ';
+}
+
+.lista-3 li::marker {
+  color: tomato;
+  font-size: 0.75rem;
+  font-weight: bolder;
+}
+
+/* h1::before, h1::after {
+  content: "";
+  display: block;
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: hotpink;
+  font-size: 1rem;
+  font-weight: 400;
+} */
+
+.h1-container {
+  display: grid;
+  place-content: center;
+}
+
+h1 {
+  position: relative;
+  width: fit-content;
+}
+
+h1::before {
+  content: '';
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+/* h1::after {
+  content: 'adios';
+} */
+
+h2::before {
+  content: '';
+  display: inline-block;
+  width: 1ex;
+  aspect-ratio: 1;
+  background-color: orange;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
