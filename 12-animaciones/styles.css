@@ -65,3 +65,29 @@ main:hover .box{
 .ease-in-out {
   transition-timing-function: ease-in-out;
 }
+
+.animado {
+  background-color: hotpink;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  animation: caja 2s ease-in-out;
+}
+
+/* Propiedad arroba @ */
+/* at rule @ */
+@keyframes caja {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  100% {
+    top: 500px;
+    left: calc(100% - 100px);
+  }
+}
