@@ -1,0 +1,48 @@
+body {
+  font-family: system-ui;
+}
+
+.photos-container {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 6px;
+}
+
+.photo-link {
+  position: relative;
+}
+
+.photo-link::before {
+  content: '';
+  display: block;
+  background-color: black;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 250ms;
+}
+
+.photo-link:hover::before {
+  opacity: 0.5;
+}
+
+.photo-link::after {
+  content: url(./plus.svg);
+  display: grid;
+  place-content: center;
+  background-color: #DC6D69;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+  transition: all 250ms;
+}
+
+.photo-link:hover::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
