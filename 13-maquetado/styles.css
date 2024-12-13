@@ -15,6 +15,8 @@
 
 body {
   font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  padding-inline: 2rem;
 }
 
 a {
@@ -22,24 +24,13 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background-color: rgb(28, 28, 28);
-  color: var(--clr-white);
-  display: flex;
-  justify-content: space-between;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.nav-cta-buttons {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+input {
+  font-family: inherit;
 }
 
 .link {
@@ -47,7 +38,7 @@ nav ul {
 }
 
 .link:hover {
- opacity: 0.6;
+  opacity: 0.6;
 }
 
 .link::after {
@@ -60,6 +51,8 @@ nav ul {
   padding: 0.5rem 1rem;
   border-radius: 100vw;
   transition: opacity 250ms;
+  border: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -79,4 +72,92 @@ nav ul {
 .button-purple {
   --button-bg: var(--clr-purple);
   --button-clr: var(--clr-white);
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/* Nav Bar ---------------------------- */
+nav {
+  color: var(--clr-white);
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Gradient Background --------------- */
+.gradient-bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: calc(100% - 360px);
+  background-color: green;
+  background-image: url(./assets/background.png);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  z-index: -1;
+}
+
+/* Section Hero -------------------- */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-block: 5rem 7rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 0.9;
+}
+
+.hero-section .content {
+  display: grid;
+  gap: 2rem;
+}
+
+#start-now-form {
+  background-color: hsl(0, 0%, 88%);
+  border: solid 1.5px hsl(0, 0%, 80%);
+  border-radius: 100vw;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  display: flex;
+  gap: 5px;
+}
+
+#email {
+  background-color: transparent;
+  border: none;
+}
+
+.brands {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 3rem;
+}
+
+@media (width > 680px) {
+  .brands {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
